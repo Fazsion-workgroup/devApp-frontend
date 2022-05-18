@@ -3,6 +3,10 @@
     src: url('./assets/fonts/NeurialGrotesk-Regular.otf');
 }
 
+@font-face {
+    font-family: 'Neurial-Bold';
+    src: url('./assets/fonts/NeurialGrotesk-Extrabold.otf');
+}
 * {
     font-family: 'Neurial-Regular', sans-serif;
     margin: 0;
