@@ -7,6 +7,10 @@
     font-family: 'Neurial-Bold';
     src: url('./assets/fonts/NeurialGrotesk-Extrabold.otf');
 }
+@font-face {
+    font-family: 'Neurial-LightBold';
+    src: url('./assets/fonts/NeurialGrotesk-Bold.otf');
+}
 * {
     font-family: 'Neurial-Regular', sans-serif;
     margin: 0;

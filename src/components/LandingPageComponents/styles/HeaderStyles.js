@@ -85,6 +85,7 @@ export const HeroSection = styled.section`
         align-items: center;
         justify-content: center;
         padding: 4rem 2rem;
+
         .hero-text {
             margin-bottom: 2rem;
             width: 100%;
@@ -101,6 +102,56 @@ export const HeroSection = styled.section`
                 padding: 10px;
                 font-size: 10px;
             }
+        }
+    }
+`;
+
+export const MoreInfoSection = styled.section`
+    display: flex;
+    position: relative;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2rem;
+    .info-text {
+        width: 55%;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #2121f1;
+            font-family: 'Neurial-LightBold', sans-serif;
+        }
+        p {
+            font-weight: 300;
+            color: #050038;
+            /* margin-bottom: rem; */
+        }
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 2rem;
+        .info-text {
+            margin-bottom: 2rem;
+            width: 100%;
+            h2 {
+                font-size: 32px;
+                line-height: 35px;
+                letter-spacing: -0.04em;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+        .floating-img {
+            position: absolute;
+            top: 10px;
+            right: 20%;
         }
     }
 `;
