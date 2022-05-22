@@ -6,7 +6,7 @@ const AllRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                {/* Landing page routes */}
+                {/* Landing and auth page routes */}
                 {landingPageRoutes.map((route) => (
                     <Route key={route.path} path={route.path} element={route.element} />
                 ))}

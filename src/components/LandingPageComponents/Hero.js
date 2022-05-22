@@ -3,6 +3,7 @@ import { HeroSection, MoreInfoSection } from './styles/HeaderStyles';
 import hero from '../../assets/hero-img.svg';
 import info from '../../assets/info-img.svg';
 import float from '../../assets/floating-img.svg';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -16,7 +17,9 @@ const Hero = () => {
                         Below is a short checklist we recommend finishing to make your store a
                         success.{' '}
                     </p>
-                    <button>Join Tajiri Now</button>
+                    <Link to="/register">
+                        <button>Join Tajiri Now</button>
+                    </Link>
                 </div>
                 <div className="hero-img">
                     <img src={hero} alt="hero-img" />
