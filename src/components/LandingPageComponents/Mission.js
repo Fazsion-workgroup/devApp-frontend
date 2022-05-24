@@ -28,7 +28,7 @@ const Mission = () => {
                 </div>
             </WaysSection>
             <ExtraSection>
-                <h1>We're serious about your enterpreneurship journey...</h1>
+                <h1>We&apos;re serious about your enterpreneurship journey...</h1>
 
                 <div className="extra-text">
                     <h6>Tajiri is secure</h6>

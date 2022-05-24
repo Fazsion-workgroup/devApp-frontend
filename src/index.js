@@ -1,28 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
-import reportWebVitals from "./reportWebVitals";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import { Toaster } from "react-hot-toast";
-import configureStore from "./redux/configureStore";
-import { persistStore } from "redux-persist";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Toaster } from 'react-hot-toast';
+import configureStore from './redux/configureStore';
+import { persistStore } from 'redux-persist';
 
 const store = configureStore();
 const persistor = persistStore(store);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <App />
-      </PersistGate>
-      <Toaster />
-    </Provider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <Provider store={store}>
+            <PersistGate persistor={persistor}>
+                <App />
+            </PersistGate>
+            <Toaster />
+        </Provider>
+    </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
